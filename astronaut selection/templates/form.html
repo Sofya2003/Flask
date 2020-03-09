@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="static/css/selection_style.css" />
+    <title>Отбор астронавтов</title>
+</head>
+<body>
+    <h1>Анкета претендента</h1>
+    <h2>на участие в миссии</h2>
+    <div>
+        <form class="login_form" method="post">
+            <div class="form-group">
+                <input type="text" size="41" class="form-control" id="surname" aria-describedby="emailHelp" placeholder="Введите фамилию" name="surname"><br>
+                <input type="text" size="41" class="form-control" id="name" placeholder="Введите имя" name="name"><br>
+                <div class="email">
+                    <input type="email" size="41" class="form-control" id="email" placeholder="Введите почту" name="email"><br>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="educationSelect">Какое у Вас образование?</label><br>
+                <select class="form-control" id="educationSelect" name="education">
+                    <option>Основное общее</option>
+                    <option>Среднее общее</option>
+                    <option>Среднее профессиональное</option>
+                    <option>Бакалавриат</option>
+                    <option>Магистратура</option>
+                    <option>Аспирантура</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="professionSelect">Какие у Вас есть профессии?</label>
+                <div class="checkbox">
+                    <input type="checkbox" name="option1">Инженер-исследователь<br>
+                    <input type="checkbox" name="option1" value="opt1">Пилот<br>
+                    <input type="checkbox" name="option2" value="opt2">Строитель<br>
+                    <input type="checkbox" name="option3" value="opt3">Экзобиолог<br>
+                    <input type="checkbox" name="option4" value="opt4">Врач<br>
+                    <input type="checkbox" name="option5" value="opt5">Инженер по терраформированию<br>
+                    <input type="checkbox" name="option6" value="opt6">Климатолог<br>
+                    <input type="checkbox" name="option7" value="opt7">Специалист по радиационной защите<br>
+                    <input type="checkbox" name="option8" value="opt8">Астрогеолог<br>
+                    <input type="checkbox" name="option9" value="opt9">Гляциолог
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="form-check">Укажите пол</label>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="sex" id="male" value="male" checked>
+                    <label class="form-check-label" for="male">Мужской</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="sex" id="female" value="female">
+                    <label class="form-check-label" for="female">Женский</label>
+                </div>
+            </div>
+            <div class="form-group-textarea">
+                <label for="about">Почему Вы хотите принять участие в миссии?</label><br>
+                <textarea class="form-control" id="about" rows="3" cols="39" name="about"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="photo">Приложите фотографию</label><br>
+                <div class="file"><input type="file" class="form-control" id="photo" name="file"></div>
+            </div>
+            <div class="form-group">
+                <div class="checkbox-ready"><input type="checkbox" name="ready">Готовы остаться на Марсе?</div>
+            </div>
+            <div class="form-group">
+                <button>Отправить</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
